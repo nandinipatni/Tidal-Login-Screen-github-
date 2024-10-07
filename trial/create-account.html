@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Logo -->
+    <div class="logo-wrapper">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Tidalhifi.jpg" alt="Tidal Logo" class="logo">
+    </div>
+    
+    <!-- Create your account text -->
+    <div class="outer-text-wrapper">
+        <h1>Create your account</h1>
+    </div>
+    
+    <div class="container">
+        <!-- Account creation form -->
+        <div class="login-wrapper">
+            <form class="login-form" id="createAccountForm">
+                <p>Your email: <span id="userEmail"></span></p>
+
+                <label for="password">Create Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" placeholder="Confirm your password">
+
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob">
+
+                <!-- Agreement Text with White Color -->
+                <p class="agreement-text">
+                    By signing up you confirm that you have read and agree to TIDAL's <a href="terms.html" target="_blank">Terms of Use</a> and <a href="privacy.html" target="_blank">Privacy Notice</a>.
+                </p>
+
+                <div class="actions">
+                    <button type="button" id="signUpBtn">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script defer src="script.js"></script>
+</body>
+</html>
